@@ -1,89 +1,69 @@
-<!DOCTYPE html>
+
+<!doctype html>
 <html>
+
 <head>
-<title>借钱助手</title>
-<link rel="icon" href="http://ww1.sinaimg.cn/large/6d563c71ly1fkc3oysbukj2050050aa2.jpg" type="image/x-icon">
-<link type="text/css" rel="stylesheet" href="/index.css">
+    <meta charset="utf-8">
+    <!--    <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=0" />-->
+    <meta name="renderer" content="webkit|ie-stand" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>FlowerCool 花酷- Thunder Microcredit LLC.</title>
+    <link rel="stylesheet" href="/reset.css">
+    <link rel="stylesheet" href="/index.css">
+    <!--[if lte IE 8]>
+	<style type="text/css">
+		html,body{width:100%; height:100%; overflow:scroll}
+		.section-btn{display:none;}
+	</style>
+	<![endif]-->
 </head>
+
 <body>
-<div class="kyx">
-<div class="kyx_head">
-<div class="kyx_shell">
-<div class="kyx_container">
-<h2><img src="http://ww1.sinaimg.cn/large/6d563c71ly1fkc3oysbukj2050050aa2.jpg"></h2>
-</div><!-- kyx_container -->
-</div><!-- kyx_shell -->
-</div><!-- kyx_head -->
-
-<div class="kyx_body">
-<div class="kyx_shell">
-<div class="kyx_container">
-<div class="kyx_wrapper">
-<div class="wrapper joinus">
-<h2>加入我们</h2>
-<strong>市场推广</strong>
-<p>
-工作内容：
-</p>
-<ol>
-<li>推广借钱助手APP获取用户</li>
-</ol>
-<p>
-要求：
-</p>
-<ol>
-<li>相关市场工作经验</li>
-<li>精通app运营推广，有实战经验及案例</li>
-</ol>
-<p>地点: 海市长宁区广顺路33号8幢160室</p>
-<p>简历接收邮箱：yuantu360@qq.com</p>
-</div><!-- wrapper joinus -->
-</div><!-- kyx_wrapper -->
-
-<div class="kyx_wrapper">
-<div class="wrapper aboutus">
-<h2>关于我们</h2>
-<p>
-借钱助手由上海番贝颛金融信息服务有限公司开发的app。
-借钱助手是一款贷款垂直搜索平台，纯信用贷款，低息低门槛高通过率，手机贷款，一键申请，海量机构任你选，帮您快速申请贷款，解决你的燃眉之急，是您的移动贷款管理专家！
-</p>
-</div><!-- wrapper aboutus -->
-</div><!-- kyx_wrapper -->
-
-<div class="kyx_wrapper">
-<div class="wrapper cooperation">
-<h2>合作</h2>
-<p>请发邮件至yuantu360@qq.com</p>
-</div><!-- wrapper cooperation -->
-</div><!-- kyx_wrapper -->
-
-
-<div class="kyx_wrapper">
-<div class="wrapper connectus">
-<h2>联系我们</h2>
-<p>
-请发邮件至yuantu360@qq.com
-</p>
-</div><!-- wrapper connectus -->
-</div><!-- kyx_wrapper -->
-
-</div><!-- kyx_container -->
-</div><!-- kyx_shell -->
-<div class="kyx_us_bg"></div><!-- kyx_intro_bg -->
-</div><!-- kyx_body -->
-
-<div class="kyx_foot">
-<div class="kyx_shell">
-<div class="kyx_container">
-<p class="p2">
-<span>@2017 借钱助手APP</span>
-</p>
-<p class="p3">2017 Shanghai Fanbeizhuan Financial Information Service Co.,Ltd.
-
- all right reserved. </p>
-</div><!-- kyx_container -->
-</div><!-- kyx_shell -->
-</div><!-- kyx_foot -->
-</div><!-- kyx -->
+    <div class="container">
+        <header>
+            <p> <span id="5">ContactUs</span><span id="4">Process</span><span id="3">Product</span><span id="2">Company</span><span id="1" class="onClick">Home</span> </p>
+        </header>
+        <div class="banner section1">
+            <p>FlowerCool
+                <br><span>Fast & Quick</span></p>
+        </div>
+        <div class="contant">
+            <section class="section2">
+                <h3></h3>
+                <div>FlowerCool is developed and all rights reserved by Thunder Microcredit LLC.
+                    <br>Dedicated to helping every Delaware resident who is in urgent need of money.
+                    <br>Quick lending: quick loan, speed to the account.
+                    <br>Security: provide security for your account.</div>
+            </section>
+            <section class="section3">
+                <h3></h3>
+                <div></div>
+            </section>
+            <section class="section4">
+                <h3></h3>
+                <div></div>
+            </section>
+            <section class="section5">
+                <h3></h3>
+                <div>
+                    <p>+1-302-608-9014&nbsp;&nbsp;&nbsp;&nbsp;Service time：9:00-18:00</p>
+                    <p>Office: 3500 South Dupont Highway Dover, Kent County Delaware 19901 U.S.A.</p>
+                </div>
+            </section>
+        </div>
+        <footer> Copyright © Thunder Microcredit LLC. all rights reserved </footer>
+    </div>
+    <script src="/jquery.js"></script>
+    <script>
+        $('header span').on('click', function() {
+            var id = $(this).attr('id');
+            $(this).addClass('onClick').siblings('span').removeClass('onClick');
+            $('#section' + id).scrollTop();
+            var scrollNum = $('.section' + id).offset().top - 100;
+            $("html,body").animate({
+                scrollTop: scrollNum
+            }, 500);
+        });
+    </script>
 </body>
 </html>
